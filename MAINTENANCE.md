@@ -64,11 +64,13 @@ agent.
 ### Update the Ubuntu OS version
 
 Packer is used to build two AMIs, one for x64 architecture (intel/amd) and one
-for the arm64 architecture. The Packer configuration for these two AMIs is in
+for the arm64 architecture, for each of azp/github. The Packer configuration for these AMIs is in
 these files:
 
-- [ami-build/azp-x64.json](ami-build/azp-x64.json)
-- [ami-build/azp-arm64.json](ami-build/azp-arm64.json)
+- [ami-build/azp-x64.pkr.hcl](ami-build/azp-x64.pkr.hcl)
+- [ami-build/azp-arm64.pkr.hcl](ami-build/azp-arm64.pkr.hcl)
+- [ami-build/gh-x64.pkr.hcl](ami-build/gh-x64.pkr.hcl)
+- [ami-build/gh-arm64.pkr.hcl](ami-build/gh-arm64.pkr.hcl)
 
 Refer to this
 [howto](https://learn.hashicorp.com/tutorials/packer/aws-get-started-build-image?in=packer/aws-get-started)
